@@ -24,4 +24,14 @@
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="285dp" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:onClick="checkSetting"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        tools:layout_editor_absoluteY="285dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
