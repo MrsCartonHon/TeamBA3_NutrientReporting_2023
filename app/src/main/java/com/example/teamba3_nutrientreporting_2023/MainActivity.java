@@ -21,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.this.startActivity(itent);
     }
 
+    public void goToMaps(View view) {
+        System.out.println("Marker One");
+        Intent itent = new Intent(MainActivity.this, MapsActivity.class);
+        System.out.println("Marker");
+        MainActivity.this.startActivity(itent);
+    }
+
     public void checkSetting(View view){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
         System.out.println("AEIOU " + preferences.getString("unitsystem", ""));
