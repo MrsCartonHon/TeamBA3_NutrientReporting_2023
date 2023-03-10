@@ -1,11 +1,12 @@
 package com.example.teamba3_nutrientreporting_2023;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.preference.PreferenceManager;
+//import androidx.preference.PreferenceManager;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {

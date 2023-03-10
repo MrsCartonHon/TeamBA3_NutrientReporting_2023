@@ -9,7 +9,8 @@ android {
     defaultConfig {
         applicationId "com.example.teamba3_nutrientreporting_2023"
         minSdk 26
-        targetSdk 33
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk 29
         versionCode 1
         versionName "1.0"
 
