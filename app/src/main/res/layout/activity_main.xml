@@ -66,8 +66,8 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#F6DF6C"
-        android:text="Map
-"
+        android:text="Map"
+        android:onClick="goToMaps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calcButton" />
 
