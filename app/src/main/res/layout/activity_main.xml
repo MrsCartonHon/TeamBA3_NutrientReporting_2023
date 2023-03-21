@@ -14,37 +14,36 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif-black"
-        android:text="Nutrient Dashboard"
+        android:gravity="center"
+        android:text="@string/dashboard_header"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/settingsButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
         android:onClick="goToSettings"
-        app:icon="@drawable/ic_baseline_settings_24"
-        app:iconTint="#437709"
+        android:src="@drawable/ic_baseline_settings_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashBoardTitle" />
 
-    <Button
+    <ImageButton
         android:id="@+id/calcButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#F6DF6C"
+        android:layout_marginTop="8dp"
 
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#F6DF6C"
         android:onClick="checkSetting"
-        app:icon="@drawable/ic_baseline_calculate_24"
-        app:iconTint="#4F7804"
+        android:src="@drawable/ic_baseline_calculate_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashBoardTitle" />
 
@@ -52,8 +51,8 @@
         android:id="@+id/inventoryButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
         android:text="Inventory"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,11 +62,11 @@
         android:id="@+id/mapButton"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#F6DF6C"
-        android:text="Map"
         android:onClick="goToMaps"
+        android:text="Map"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calcButton" />
 
