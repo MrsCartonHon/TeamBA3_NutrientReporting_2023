@@ -24,50 +24,54 @@
 
     <ImageButton
         android:id="@+id/settingsButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
         android:onClick="goToSettings"
         android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintEnd_toStartOf="@+id/calcButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashBoardTitle" />
 
     <ImageButton
         android:id="@+id/calcButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
 
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
         android:onClick="checkSetting"
         android:src="@drawable/ic_baseline_calculate_24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/settingsButton"
         app:layout_constraintTop_toBottomOf="@+id/dashBoardTitle" />
 
-    <Button
+    <ImageButton
         android:id="@+id/inventoryButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
-        android:text="Inventory"
+        android:src="@drawable/ic_baseline_inventory_24"
+        app:layout_constraintEnd_toStartOf="@+id/mapButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
 
-    <Button
+    <ImageButton
         android:id="@+id/mapButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:backgroundTint="#F6DF6C"
         android:onClick="goToMaps"
-        android:text="Map"
+        android:src="@drawable/ic_baseline_map_24"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/inventoryButton"
         app:layout_constraintTop_toBottomOf="@+id/calcButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
