@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class Inventory extends AppCompatActivity {
 
     @Override
@@ -11,6 +13,7 @@ public class Inventory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
 
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     }
 }
