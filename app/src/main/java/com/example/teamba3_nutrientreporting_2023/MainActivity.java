@@ -30,8 +30,10 @@ public class MainActivity extends AppCompatActivity {
         MainActivity.this.startActivity(itent);
     }
 
-    public void openInventory(View view) {
-        Intent itent = new Intent(this, Inventory.class);
+    public void goToMaps(View view) {
+        System.out.println("Marker One");
+        Intent itent = new Intent(MainActivity.this, MapsActivity.class);
+        System.out.println("Marker");
         MainActivity.this.startActivity(itent);
     }
 
