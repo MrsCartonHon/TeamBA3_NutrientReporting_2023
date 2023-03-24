@@ -23,10 +23,10 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="${MAPS_API_KEY}" />
+            android:value="$AIzaSyBz21xJb-d_2xjj4aYpj6VH9_bNSzkNtO0" />
         <activity
             android:name=".Inventory"
-            android:label = "@string/inventory_name"
+            android:label="@string/inventory_name"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
