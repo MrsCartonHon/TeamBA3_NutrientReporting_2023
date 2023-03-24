@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class Inventory extends AppCompatActivity {
+public class InventoryActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

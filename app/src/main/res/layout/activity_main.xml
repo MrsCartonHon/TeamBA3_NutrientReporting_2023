@@ -42,7 +42,7 @@
 
         android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
-        android:onClick="checkSetting"
+        android:onClick="goToCalculator"
         android:src="@drawable/ic_baseline_calculate_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -55,6 +55,7 @@
         android:layout_height="108dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
+        android:onClick="goToInventory"
         android:src="@drawable/ic_baseline_inventory_24"
         app:layout_constraintEnd_toStartOf="@+id/mapButton"
         app:layout_constraintHorizontal_bias="0.5"
