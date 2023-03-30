@@ -15,10 +15,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*Button inventoryButton = (Button) findViewById(R.id.inventoryButton);
+        inventoryButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, Inventory.class));
+            }
+        });*/
     }
 
     public void goToSettings(View view) {
         Intent itent = new Intent(MainActivity.this, SettingsActivity.class);
+        MainActivity.this.startActivity(itent);
+    }
+
+    public void openInventory(View view) {
+        Intent itent = new Intent(this, Inventory.class);
         MainActivity.this.startActivity(itent);
     }
 
