@@ -2,6 +2,8 @@ package com.example.teamba3_nutrientreporting_2023;
 
 
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -9,11 +11,19 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private
     GoogleMap mMap;
+
+    private Stack<Polyline> theLineArray = new Stack<Polyline>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +33,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        View view = mapFragment.getView();
+        view.setClickable(false);
     }
 
     /**
@@ -45,5 +57,22 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .position(developer)
                 .title("Developers exact position as of the creation of this demo"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(developer));
+        mMap.setOnMapClickListener(this::onMapClick);
+    }
+
+    public void onMapClick (LatLng point){
+        if(theLineArray.size() == 0)
+            addLine();
+        List points = theLineArray.peek().getPoints();
+        points.add(point);
+        theLineArray.peek().setPoints(points);
+    }
+
+    public void addLine(View view){
+        addLine();
+    }
+
+    public void addLine(){
+        theLineArray.push(mMap.addPolyline(new PolylineOptions()));
     }
 }
