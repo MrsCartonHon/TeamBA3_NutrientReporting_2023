@@ -23,9 +23,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMaps(View view) {
-        System.out.println("Marker One");
         Intent itent = new Intent(MainActivity.this, MapsActivity.class);
-        System.out.println("Marker");
+        MainActivity.this.startActivity(itent);
+    }
+
+    public void goToDead(View view) {
+        Intent itent = new Intent(MainActivity.this, CalcActivty.class);
         MainActivity.this.startActivity(itent);
     }
 

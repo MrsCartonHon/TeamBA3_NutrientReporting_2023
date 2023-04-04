@@ -42,7 +42,7 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="#F6DF6C"
 
-        android:onClick="checkSetting"
+        android:onClick="goToDead"
         app:icon="@drawable/ic_baseline_calculate_24"
         app:iconTint="#4F7804"
         app:layout_constraintEnd_toEndOf="parent"
