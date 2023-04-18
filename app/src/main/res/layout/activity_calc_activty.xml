@@ -38,4 +38,14 @@
         app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
         app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
         app:layout_constraintTop_toBottomOf="@+id/amountOfFertilizer" />
+
+    <Spinner
+        android:id="@+id/dummy_fertilizers"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
+        app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
+        tools:layout_editor_absoluteY="139dp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
