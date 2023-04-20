@@ -40,6 +40,7 @@
         android:layout_width="108dp"
         android:layout_height="108dp"
 
+
         android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
         android:onClick="checkSetting"
@@ -75,5 +76,13 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/inventoryButton"
         app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
+    <TextView
+        android:id="@+id/greeks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GeeksForGeeks(Firebase Authentication)"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
