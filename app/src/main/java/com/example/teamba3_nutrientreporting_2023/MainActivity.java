@@ -36,4 +36,9 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(view.getContext());
         System.out.println("AEIOU " + preferences.getString("unitsystem", ""));
     }
+
+    public void goToHelp(View view) {
+        Intent itent = new Intent(MainActivity.this, HelpMenuActivity.class);
+        MainActivity.this.startActivity(itent);
+    }
 }
