@@ -2,56 +2,62 @@ package com.example.teamba3_nutrientreporting_2023;
 
 public class FertilizerActivity {
 
-  /*  private String[][] nutrientList = {{"NRatio", "0.0"},
-                                       {"Pratio", "0.0"},
-                                       {"Kratio", "0.0"},
-                                       {"Sratio", "0.0"},
-                                       {"CaRatio", "0.0"},
-                                       {"MgRatio", "0.0"},
-                                       {"FeRatio", "0.0"},
-                                       {"Mnratio", "0.0"},
-            {}
-    };*/
-
     private double nitroRatio;
     private double phospRatio;
     private double potasRatio;
+    private double sulfrRatio;
 
+    //defautl constructor
     public FertilizerActivity(){
         nitroRatio = 0.0;
         phospRatio = 0.0;
         potasRatio = 0.0;
+        sulfrRatio = 0.0;
     }
 
-    public FertilizerActivity(double nitrogen, double phosphorus, double potassium) {
+    //loaded constructor
+    public FertilizerActivity(double nitrogen, double phosphorus, double potassium, double sulfur) {
         nitroRatio = nitrogen;
         phospRatio = phosphorus;
         potasRatio = potassium;
+        sulfrRatio = sulfur;
     }
 
+    // Getters
     public double getNitroRatio(){
-        return nitroRatio;
+        return this.nitroRatio;
     }
 
     public double getPhospRatio(){
-        return phospRatio;
+        return this.phospRatio;
     }
 
     public double getPotasRatio(){
-        return potasRatio;
+        return this.potasRatio;
     }
 
+    public double getSulfrRatio() {
+        return sulfrRatio;
+    }
+
+    //setters
     public void setNitroRatio(double nitrogen){
-        nitroRatio = nitrogen;
+        this.nitroRatio = nitrogen;
     }
 
     public void setPhospRatio(double phosphorus){
-        phospRatio = phosphorus;
+        this.phospRatio = phosphorus;
     }
 
-    public void setPotasRatio(double potassium){
-        potasRatio = potassium;
+    public void setPotasRatio(double potasRatio) {
+        this.potasRatio = potasRatio;
     }
+
+    public void setSulfrRatio(double sulfrRatio) {
+        this.sulfrRatio = sulfrRatio;
+    }
+
+
 
 
 }
