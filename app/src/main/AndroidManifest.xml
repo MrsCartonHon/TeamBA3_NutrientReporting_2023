@@ -24,7 +24,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".RegistrationActivity" />
+        <activity
+            android:name=".HelpDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalcActivty"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -41,8 +49,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="$AIzaSyBz21xJb-d_2xjj4aYpj6VH9_bNSzkNtO0" />
-
+            android:value="${MAPS_API_KEY}" />
         <activity
             android:name=".Inventory"
             android:label="@string/inventory_name"
@@ -51,6 +58,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
