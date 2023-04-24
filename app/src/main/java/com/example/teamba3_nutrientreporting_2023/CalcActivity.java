@@ -27,8 +27,7 @@ public class CalcActivity extends AppCompatActivity implements AdapterView.OnIte
         TextView output = (TextView)(findViewById(R.id.output));
         output.setText(amnt + getString(R.string.calcPoundArea));
     }
-    public void onItemSelected(AdapterView<?> parent, View view,
-                               int pos, long id) {
+    public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
     }
