@@ -79,8 +79,6 @@
         android:id="@+id/greeks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GeeksForGeeks(Firebase Authentication)"
-        android:textSize="20dp"
         tools:ignore="MissingConstraints" />
         
     <Button
