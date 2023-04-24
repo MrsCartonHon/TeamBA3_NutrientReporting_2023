@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463651992653",
+    "project_id": "inbound-respect-374616",
+    "storage_bucket": "inbound-respect-374616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463651992653:android:05eea684162944b61c5804",
+        "android_client_info": {
+          "package_name": "com.example.teamba3_nutrientreporting_2023"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463651992653-8r8brv2arokg0nh2u3c3uccqumr739nk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDss8tWoaHfzi9Zn_0d3CNwOSqv1csH5wk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463651992653-8r8brv2arokg0nh2u3c3uccqumr739nk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
