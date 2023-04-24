@@ -12,16 +12,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView geeksforgeeks;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        geeksforgeeks = findViewById(R.id.greeks);
-        geeksforgeeks.setText(
-                "GeeksForGeeks(Firebase Authentication)");
 
         /*Button inventoryButton = (Button) findViewById(R.id.inventoryButton);
         inventoryButton.setOnClickListener(new View.OnClickListener(){

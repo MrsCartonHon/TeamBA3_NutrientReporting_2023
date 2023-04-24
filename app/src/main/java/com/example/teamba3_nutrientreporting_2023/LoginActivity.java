@@ -1,4 +1,4 @@
-package com.example.teamba3_nutrientreporting_2023;//package com.geeksforgeeks.firebaseuserauthentication;
+package com.example.teamba3_nutrientreporting_2023;
 
 //import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
