@@ -8,17 +8,36 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView geeksforgeeks;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        geeksforgeeks = findViewById(R.id.greeks);
+        geeksforgeeks.setText(
+                "GeeksForGeeks(Firebase Authentication)");
+
+        /*Button inventoryButton = (Button) findViewById(R.id.inventoryButton);
+        inventoryButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, Inventory.class));
+            }
+        });*/
     }
 
     public void goToSettings(View view) {
         Intent itent = new Intent(MainActivity.this, SettingsActivity.class);
+        MainActivity.this.startActivity(itent);
+    }
+
+    public void openInventory(View view) {
+        Intent itent = new Intent(this, Inventory.class);
         MainActivity.this.startActivity(itent);
     }
 
