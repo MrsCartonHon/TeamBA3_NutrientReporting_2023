@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcActivty">
+
+    <EditText
+        android:id="@+id/amountOfFertilizer"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Enter amount of fertilizer here "
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
+        app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
+        app:layout_constraintTop_toBottomOf="@+id/equalsbutton" />
+
+    <Button
+        android:id="@+id/equalsbutton"
+        android:layout_width="165dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:onClick="equals"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
+        app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
+        app:layout_constraintTop_toBottomOf="@+id/amountOfFertilizer" />
+
+    <Spinner
+        android:id="@+id/dummy_fertilizers"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
+        app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
+        tools:layout_editor_absoluteY="139dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
