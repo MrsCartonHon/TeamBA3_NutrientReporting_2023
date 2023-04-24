@@ -32,7 +32,7 @@
             android:name=".HelpMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".CalcActivty"
+            android:name=".CalcActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
