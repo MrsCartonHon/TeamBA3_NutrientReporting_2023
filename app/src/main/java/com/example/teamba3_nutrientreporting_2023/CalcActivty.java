@@ -20,6 +20,7 @@ public class CalcActivty extends AppCompatActivity implements AdapterView.OnItem
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.dummy_fertilizers, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
 
     }
@@ -33,6 +34,14 @@ public class CalcActivty extends AppCompatActivity implements AdapterView.OnItem
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
+        switch(pos){
+            case 0:
+                System.out.println("part 1");
+                break;
+            case 1:
+                System.out.println("punkte zwei");
+                break;
+        }
     }
 
     public void onNothingSelected(AdapterView<?> parent) {
