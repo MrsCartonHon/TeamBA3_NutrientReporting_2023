@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class CalcActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class CalcActivty extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,12 @@ public class CalcActivity extends AppCompatActivity implements AdapterView.OnIte
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.dummy_fertilizers, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
+
+
     }
     public void equals(View view){
+        System.out.println("Doin M A F F");
         EditText test = (EditText)(findViewById(R.id.amountOfFertilizer));
         double amnt = Double.parseDouble(test.getText().toString())/0.18;
         TextView output = (TextView)(findViewById(R.id.output));
@@ -30,6 +34,14 @@ public class CalcActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
         // An item was selected. You can retrieve the selected item using
         // parent.getItemAtPosition(pos)
+        switch(pos){
+            case 0:
+                System.out.println("part 1");
+                break;
+            case 1:
+                System.out.println("punkte zwei");
+                break;
+        }
     }
 
     public void onNothingSelected(AdapterView<?> parent) {
