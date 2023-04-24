@@ -42,7 +42,7 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="#F6DF6C"
         android:src="@drawable/ic_baseline_calculate_24"
-        android:onClick="goToDead"
+        android:onClick="goToCalc"
         app:iconTint="#4F7804"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -75,13 +75,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/inventoryButton"
         app:layout_constraintTop_toBottomOf="@+id/calcButton" />
-    <TextView
-        android:id="@+id/greeks"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GeeksForGeeks(Firebase Authentication)"
-        android:textSize="20dp"
-        tools:ignore="MissingConstraints" />
         
     <Button
         android:id="@+id/helpButton"
