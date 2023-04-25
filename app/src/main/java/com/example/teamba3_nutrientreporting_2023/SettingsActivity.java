@@ -1,6 +1,5 @@
 package com.example.teamba3_nutrientreporting_2023;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -30,11 +29,11 @@ public class SettingsActivity extends AppCompatActivity {
         finish();
         return true;
     }
+
     public static class SettingsFragment extends PreferenceFragmentCompat {
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             setPreferencesFromResource(R.xml.root_preferences, rootKey);
         }
     }
-
 }

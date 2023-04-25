@@ -12,15 +12,13 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    private
-    GoogleMap mMap;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        SupportMapFragment mapFragment =
+                (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
@@ -37,13 +35,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
         LatLng developer = new LatLng(41.5565035, -90.4969586);
-        mMap.addMarker(new MarkerOptions()
+        googleMap.addMarker(new MarkerOptions()
                 .position(developer)
                 .title("Developers exact position as of the creation of this demo"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(developer));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(developer));
     }
 }
