@@ -23,6 +23,7 @@
     <string name="title_activity_tabbed">Tabbed</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="calcPoundArea">\" pounds per acre\"</string>
     <string-array name="dummy_fertilizers">
         <item>100% Nitrogen</item>
         <item>100% Sulfur</item>
