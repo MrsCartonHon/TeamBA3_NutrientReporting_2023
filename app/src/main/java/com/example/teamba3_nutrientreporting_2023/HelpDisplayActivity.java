@@ -19,17 +19,21 @@ public class HelpDisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_display);
+
         LinearLayout layout = findViewById(R.id.helpDisplay);
         HelpView page = new HelpView(this, getIntent().getIntExtra("resource", -1));
-        BufferedReader reader = new BufferedReader(new InputStreamReader(getResources().openRawResource(page.resource)));
         Markwon markwon = Markwon.create(page.getContext());
+        BufferedReader reader = new BufferedReader(new InputStreamReader(getResources().openRawResource(page.resource)));
+
         try {
             reader.readLine();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         markwon.setMarkdown(page, reader.lines().collect(Collectors.joining(System.lineSeparator())));
         page.setMovementMethod(new ScrollingMovementMethod());
+
         layout.addView(page);
     }
 }
