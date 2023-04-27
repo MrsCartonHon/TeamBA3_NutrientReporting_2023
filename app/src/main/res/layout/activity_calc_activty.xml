@@ -28,6 +28,29 @@
         app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
         app:layout_constraintTop_toBottomOf="@+id/equalsbutton" />
 
+    <TextView
+        android:id="@+id/output2"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:alpha="0"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
+        app:layout_constraintTop_toBottomOf="@+id/equalsbutton" />
+
+    <TextView
+        android:id="@+id/output3"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:alpha="0"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
+        app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
+        app:layout_constraintTop_toBottomOf="@+id/equalsbutton" />
+
     <Button
         android:id="@+id/equalsbutton"
         android:layout_width="165dp"
@@ -41,11 +64,14 @@
 
     <Spinner
         android:id="@+id/dummy_fertilizers"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_width="199dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/amountOfFertilizer"
         app:layout_constraintEnd_toEndOf="@+id/amountOfFertilizer"
         app:layout_constraintStart_toStartOf="@+id/amountOfFertilizer"
-        tools:layout_editor_absoluteY="139dp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
