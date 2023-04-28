@@ -47,6 +47,12 @@
                 android:value="" />
         </activity>
 
+        <activity
+            android:name=".FertilizerActivity"
+            android:exported="false"
+            android:label="FertilizerActivity">
+        </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />
