@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_white"
+    android:background="@color/pink"
     tools:context=".MainActivity">
 
-    <!-- Card view for displaying the --->
+    <!-- Card view for displaying the -->
     <!-- Pie chart and details of pie chart -->
 <androidx.cardview.widget.CardView
     android:id="@+id/cardViewGraph"
@@ -21,7 +21,7 @@
     app:cardCornerRadius="10dp">
 
 
-    <!--Linear layout to display pie chart --->
+    <!--Linear layout to display pie chart -->
     <!-- and details of pie chart-->
 
     <LinearLayout
@@ -32,19 +32,19 @@
 
         <!--Pie chart to display the data-->
 
-        <
+<!--        <-->
 
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/piechart"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:padding="6dp"
-            android:layout_weight="1"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="15dp"
+<!--            xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/piechart"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:padding="6dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginBottom="15dp"-->
 
-            />
+<!--            />-->
 
         <!--Creating another linear layout -->
         <!-- to display pie chart details -->
@@ -66,7 +66,7 @@
                 <View
                     android:layout_width="15dp"
                     android:layout_height="match_parent"
-                    android:background="@color/R"/>
+                    android:background="@color/teal"/>
 
                 <!--Text view to display R -->
                 <TextView
@@ -88,7 +88,7 @@
                 <View
                     android:layout_width="15dp"
                     android:layout_height="match_parent"
-                    android:background="@color/Python"/>
+                    android:background="@color/blue"/>
 
                 <!--Text view to display python text -->
                 <TextView
@@ -110,7 +110,7 @@
                 <View
                     android:layout_width="15dp"
                     android:layout_height="match_parent"
-                    android:background="@color/CPP"/>
+                    android:background="@color/purple"/>
 
                 <!--Text view to display C++ text -->
                 <TextView
@@ -132,7 +132,7 @@
                 <View
                     android:layout_width="15dp"
                     android:layout_height="match_parent"
-                    android:background="@color/Java"/>
+                    android:background="@color/orange"/>
 
                 <!--Text view to display Java text -->
                 <TextView
@@ -150,7 +150,7 @@
 </androidx.cardview.widget.CardView>
 
 
-    <!-- Another Card view for displaying --->
+    <!-- Another Card view for displaying -->
     <!-- Use of programming languages -->
 <androidx.cardview.widget.CardView
 android:layout_width="match_parent"
@@ -164,14 +164,14 @@ android:elevation="10dp"
 app:cardCornerRadius="10dp"
 android:id="@+id/details">
 
-<!--Relative layout to display --->
+<!--Relative layout to display -->
 <!-- use of programming languages -->
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <!--Text view to use of --->
+    <!--Text view to use of -->
     <!-- programming languages text-->
     <TextView
         android:layout_width="match_parent"
@@ -207,8 +207,8 @@ android:id="@+id/details">
             android:text="R"
             android:textSize="18sp"/>
 
-        <!--Text view to display the --->
-        <!-- percentage of programming language --->
+        <!--Text view to display the -->
+        <!-- percentage of programming language -->
         <!-- used. For now default set to 0-->
         <TextView
             android:layout_width="fill_parent"
@@ -246,8 +246,8 @@ android:id="@+id/details">
             android:text="Python"
             android:textSize="18sp"/>
 
-        <!--Text view to display the percentage --->
-        <!-- of programming language used. --->
+        <!--Text view to display the percentage -->
+        <!-- of programming language used. -->
         <!-- For now default set to 0-->
 
         <TextView
@@ -285,8 +285,8 @@ android:id="@+id/details">
             android:text="C++"
             android:textSize="18sp"/>
 
-        <!--Text view to display the percentage --->
-        <!-- of programming language used. --->
+        <!--Text view to display the percentage -->
+        <!-- of programming language used. -->
         <!-- For now default set to 0-->
         <TextView
             android:layout_width="fill_parent"
@@ -323,8 +323,8 @@ android:id="@+id/details">
             android:text="Java"
             android:textSize="18sp"/>
 
-        <!--Text view to display the percentage --->
-        <!-- of programming language used. --->
+        <!--Text view to display the percentage -->
+        <!-- of programming language used. -->
         <!-- For now default set to 0-->
         <TextView
             android:layout_width="fill_parent"
