@@ -24,18 +24,19 @@ public class CreateRegionViaMath extends AppCompatActivity {
     public void createRegion(View view) {
         EditText address = (EditText)(findViewById(R.id.editTextTextPostalAddress));
         EditText area = (EditText)(findViewById(R.id.editTextNumber));
+        EditText name = (EditText)(findViewById(R.id.editTextTextPersonName));
         Geocoder geocoder = new Geocoder(this);
         List<Address> addressList;
 
         try{
-            addressList = geocoder.getFromLocationName(address.toString(), 5);
+            addressList = geocoder.getFromLocationName(address.getText().toString(), 5);
             if (addressList != null) {
                 Address location = addressList.get(0);
                 location.getLatitude();
                 location.getLongitude();
-                MainActivity.regions.add(new Region(address.toString(), Integer.parseInt(area.toString()), new LatLng(location.getLatitude(), location.getLongitude())));
+                MainActivity.regions.add(new Region(address.toString(), Integer.parseInt(area.getText().toString()), new LatLng(location.getLatitude(), location.getLongitude()), name.getText().toString()));
             } else{
-                MainActivity.regions.add(new Region(address.toString(), Integer.parseInt(area.toString())));
+                MainActivity.regions.add(new Region(address.toString(), Integer.parseInt(area.getText().toString()), name.getText().toString()));
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
