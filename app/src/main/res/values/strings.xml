@@ -30,4 +30,5 @@
         <item>100% Phosphorus</item>
         <item>Potash</item>
     </string-array>
+    <string name="title_activity_create_region_via_map">CreateRegionViaMap</string>
 </resources>
