@@ -7,7 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
+
+    public static ArrayList<Region> regions = new ArrayList<Region>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToMaps(View view) {
-        Intent itent = new Intent(MainActivity.this, MapsActivity.class);
+        Intent itent = new Intent(MainActivity.this, MapMenu.class);
         MainActivity.this.startActivity(itent);
     }
 
