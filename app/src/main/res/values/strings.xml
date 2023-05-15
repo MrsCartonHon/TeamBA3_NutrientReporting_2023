@@ -29,6 +29,7 @@
     <string name="nitrogen">Nitrogen</string>
     <string name="sulfur">Sulfur</string>
     <string name="calcPoundArea">\" pounds per acre\"</string>
+    <string name="sign_up"><u>Sign Up</u></string>
     <string-array name="dummy_fertilizers">
         <item>18-46-0 DAP</item>
         <item>11-55-0 MAP</item>
