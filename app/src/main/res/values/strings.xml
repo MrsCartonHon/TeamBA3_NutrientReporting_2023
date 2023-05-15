@@ -25,9 +25,10 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="calcPoundArea">\" pounds per acre\"</string>
     <string-array name="dummy_fertilizers">
-        <item>100% Nitrogen</item>
-        <item>100% Sulfur</item>
-        <item>100% Phosphorus</item>
-        <item>Potash</item>
+        <item>18–46–0 DAP</item>
+        <item>11–55–0 MAP</item>
+        <item>34–0–0 Ammonium Nitrate</item>
+        <item>0–0–60 Potash</item>
     </string-array>
+    <string name="title_activity_create_region_via_map">CreateRegionViaMap</string>
 </resources>

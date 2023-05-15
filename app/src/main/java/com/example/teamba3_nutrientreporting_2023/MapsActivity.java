@@ -9,8 +9,16 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polygon;
+import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.maps.model.Polyline;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
+
+    List<Polygon> polygonList = new ArrayList<Polygon>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +43,20 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
-        // Add a marker in Sydney and move the camera
         LatLng developer = new LatLng(41.5565035, -90.4969586);
-        googleMap.addMarker(new MarkerOptions()
-                .position(developer)
-                .title("Developers exact position as of the creation of this demo"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(developer));
+
+        for(int i = 0; i < MainActivity.regions.size(); i++){
+            Region tempRegion = MainActivity.regions.get(i);
+            if(tempRegion.points != null ){
+                PolygonOptions tempOptions = new PolygonOptions();
+                for(int ix = 0; ix < tempRegion.points.size(); ix++){
+                    tempOptions.add(tempRegion.points.get(ix));
+                }
+                polygonList.add(googleMap.addPolygon(tempOptions));
+            } else if(tempRegion.location != null){
+                googleMap.addMarker(new MarkerOptions().position(tempRegion.location).title(tempRegion.name));
+            }
+        }
     }
 }
