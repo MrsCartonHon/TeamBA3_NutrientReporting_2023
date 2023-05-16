@@ -19,6 +19,10 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar progressbar;
 
     private FirebaseAuth mAuth;
+    public void goToRegister(View view){
+        Intent itent = new Intent(LoginActivity.this, RegistrationActivity.class);
+        LoginActivity.this.startActivity(itent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
