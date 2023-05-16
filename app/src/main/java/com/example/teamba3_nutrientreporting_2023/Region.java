@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Region implements Serializable {
     //mandatory
-    public float area;
+    public double area = 0;
     public String name;
 
     //Optional
@@ -29,9 +29,9 @@ public class Region implements Serializable {
         this.name = name;
     }
 
-    public Region(String toString, List<LatLng> points) {
+    public Region(String toString, List<LatLng> points, double area) {
         this.name = toString;
         this.points = points;
-        //area calculations are HARD on a globe??? Not immediately needed. MORE RESEARCH NEEDED.
+        this.area = area;
     }
 }

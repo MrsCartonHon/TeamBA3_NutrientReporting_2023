@@ -12,10 +12,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.teamba3_nutrientreporting_2023.databinding.ActivityCreateRegionViaMapBinding;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.maps.android.SphericalUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -71,7 +71,7 @@ public class CreateRegionViaMap extends FragmentActivity implements OnMapReadyCa
     }
     public void createRegion(View view){
         EditText name = (EditText) (findViewById(R.id.editTextTextPersonName2));
-        MainActivity.regions.add(new Region(name.getText().toString(), theLineArray.getPoints()));
+        MainActivity.regions.add(new Region(name.getText().toString(), theLineArray.getPoints(), SphericalUtil.computeArea(theLineArray.getPoints())));
         Intent itent = new Intent(CreateRegionViaMap.this, MainActivity.class);
         CreateRegionViaMap.this.startActivity(itent);
     }
