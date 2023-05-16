@@ -23,6 +23,11 @@
     <string name="title_activity_tabbed">Tabbed</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="Postassium">Postassium</string>
+    <string name="phosphurus">Phosphurus</string>
+    <string name="Potassium">Potassium</string>
+    <string name="nitrogen">Nitrogen</string>
+    <string name="sulfur">Sulfur</string>
     <string-array name="dummy_fertilizers">
         <item>100% Nitrogen</item>
         <item>100% Sulfur</item>
