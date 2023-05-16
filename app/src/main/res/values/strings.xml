@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TeamBA3_NutrientReporting_2023</string>
+    <string name="app_name">Nutrient Reporting App</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
@@ -23,22 +23,13 @@
     <string name="title_activity_tabbed">Tabbed</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
-    <string name="Postassium">Postassium</string>
-    <string name="phosphurus">Phosphurus</string>
-    <string name="Potassium">Potassium</string>
-    <string name="nitrogen">Nitrogen</string>
-    <string name="sulfur">Sulfur</string>
     <string name="calcPoundArea">\" pounds per acre\"</string>
     <string name="sign_up"><u>Sign Up</u></string>
     <string-array name="dummy_fertilizers">
-        <item>18-46-0 DAP</item>
-        <item>11-55-0 MAP</item>
-        <item>34-0-0 Ammonium Nitrate</item>
-        <item>0-0-60 Potash</item>
         <item>18–46–0 DAP</item>
         <item>11–55–0 MAP</item>
         <item>34–0–0 Ammonium Nitrate</item>
         <item>0–0–60 Potash</item>
     </string-array>
-
+    <string name="title_activity_create_region_via_map">CreateRegionViaMap</string>
 </resources>

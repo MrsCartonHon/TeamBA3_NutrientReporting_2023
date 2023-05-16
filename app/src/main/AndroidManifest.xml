@@ -35,13 +35,14 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegistrationActivity" />
+        <activity android:name=".RegistrationActivity" />
         <activity
             android:name=".HelpDisplayActivity"
             android:exported="false" />
@@ -63,16 +64,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-        <activity
-            android:name=".FertilizerActivity"
-            android:exported="false"
-            android:label="FertilizerActivity">
-        </activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="${MAPS_API_KEY}" />
         <activity
             android:name=".Inventory"
             android:label="@string/inventory_name"
@@ -81,7 +72,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
@@ -93,7 +83,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
