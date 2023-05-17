@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToCalc(View view) {
-        Intent itent = new Intent(MainActivity.this, CalcActivity.class);
+        Intent itent = new Intent(MainActivity.this, ApplicationPlanner.class);
         MainActivity.this.startActivity(itent);
     }
 

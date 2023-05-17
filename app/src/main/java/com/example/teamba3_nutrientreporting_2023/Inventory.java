@@ -1,7 +1,6 @@
 package com.example.teamba3_nutrientreporting_2023;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 //import com.google.firebase.firestore.FirebaseFirestore;
