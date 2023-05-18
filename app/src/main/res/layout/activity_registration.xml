@@ -23,10 +23,10 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="271dp"
-        android:layout_height="271dp"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
         android:src="@drawable/nutrientassist_1_"
-        app2:layout_constraintBottom_toTopOf="@+id/email"
+        app2:layout_constraintBottom_toTopOf="@+id/textView"
         app2:layout_constraintEnd_toEndOf="parent"
         app2:layout_constraintStart_toStartOf="parent"
         app2:layout_constraintTop_toTopOf="parent" />
