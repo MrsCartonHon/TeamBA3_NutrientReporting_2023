@@ -4,9 +4,14 @@ public class Fertilizer {
 
     public Fertilizer(){
         cropName = null;
+        yieldTarget = null;
+        date = "Please Enter";
     }
 
     public static String cropName;
+    public static String yieldTarget;
+    public static String date;
+
     public static String getCropName() {
         return cropName;
     }
@@ -14,7 +19,7 @@ public class Fertilizer {
         Fertilizer.cropName = cropName;
     }*/
 
-    public static String yieldTarget;
+
     public static String getYieldTarget() {
         return yieldTarget;
     }
