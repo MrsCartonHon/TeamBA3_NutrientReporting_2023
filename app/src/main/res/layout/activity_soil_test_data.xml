@@ -17,4 +17,66 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Enter Results From Soil Test Data Below:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cropandyieldtitle" />
+
+    <TextView
+        android:id="@+id/nTestRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="N:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nSoilTestInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="128dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+
+    <Button
+        android:id="@+id/crop_continue"
+        android:layout_width="225dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="32dp"
+        android:text="Continue"
+        android:onClick="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/selectedRatio"
+        android:layout_width="58dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="16dp"
+        android:text="_-_-_"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/crop_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

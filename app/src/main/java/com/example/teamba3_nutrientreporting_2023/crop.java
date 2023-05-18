@@ -72,8 +72,8 @@ public class crop extends AppCompatActivity {
 
     public void goToInputSoilTestData(View view) {
 
-        EditText crop = (EditText)findViewById(R.id.cropField);
-        EditText yield = (EditText)findViewById(R.id.yieldField);
+        crop = (EditText)findViewById(R.id.cropField);
+        yield = (EditText)findViewById(R.id.yieldField);
 
         Fertilizer.cropName = crop.getText().toString();
         Fertilizer.yieldTarget = yield.getText().toString();

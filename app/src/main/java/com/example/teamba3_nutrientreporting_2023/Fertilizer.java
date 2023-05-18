@@ -12,6 +12,10 @@ public class Fertilizer {
     public static String yieldTarget;
     public static String date;
 
+    public static int NSoilTest;
+    public static int PSoilTest;
+    public static int KSoilTest;
+
     public static String getCropName() {
         return cropName;
     }

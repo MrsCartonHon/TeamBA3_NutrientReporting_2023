@@ -3,11 +3,15 @@ package com.example.teamba3_nutrientreporting_2023;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.teamba3_nutrientreporting_2023.R;
-
 public class soilTestData extends AppCompatActivity {
+
+    private EditText n;
+
+    private TextView selectedRatio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,4 +25,10 @@ public class soilTestData extends AppCompatActivity {
     }
 
 
+    public void Continue(View view) {
+        n = (EditText)findViewById(R.id.nSoilTestInput);
+        //selectedRatio.setText(n.getText().toString());
+        //Fertilizer.NSoilTest = Integer.parseInt(n.getText().toString());
+
+    }
 }
