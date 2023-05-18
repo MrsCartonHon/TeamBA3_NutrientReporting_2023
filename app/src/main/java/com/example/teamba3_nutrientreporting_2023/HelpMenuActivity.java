@@ -22,6 +22,8 @@ public class HelpMenuActivity extends AppCompatActivity {
 
         for(int i = 0; i < pages.size(); i++){
             HelpView listings = new HelpView(this, pages.get(i));
+            listings.setTextColor(0xFF3366CC);
+            listings.setTextSize(32f);
             BufferedReader reader = new BufferedReader(new InputStreamReader(getResources().openRawResource(pages.get(i))));
             try {
                 listings.setText(reader.readLine());
@@ -39,6 +41,10 @@ public class HelpMenuActivity extends AppCompatActivity {
     }
 
     private void addHelpPages(ArrayList<Integer> pageList){
-        pageList.add(R.raw.help_example_md);
+        pageList.add(R.raw.help_settings);
+        pageList.add(R.raw.help_calculator);
+        pageList.add(R.raw.help_inventory);
+        pageList.add(R.raw.help_create_regions);
+        pageList.add(R.raw.help_help);
     }
 }
