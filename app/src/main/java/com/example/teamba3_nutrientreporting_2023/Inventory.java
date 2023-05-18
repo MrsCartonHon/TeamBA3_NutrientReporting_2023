@@ -12,6 +12,11 @@ public class Inventory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        } //Hides Action Bars
+
+
         //FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     }
