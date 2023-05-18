@@ -31,4 +31,5 @@
         <item>34–0–0 Ammonium Nitrate</item>
         <item>0–0–60 Potash</item>
     </string-array>
+    <string name="title_activity_create_region_via_map">CreateRegionViaMap</string>
 </resources>
