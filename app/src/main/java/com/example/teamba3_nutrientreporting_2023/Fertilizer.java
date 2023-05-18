@@ -31,6 +31,4 @@ public class Fertilizer {
         Fertilizer.yieldTarget = yieldTarget;
     }*/
 
-
-
 }

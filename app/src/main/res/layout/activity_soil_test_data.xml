@@ -42,6 +42,30 @@
         app:layout_constraintEnd_toStartOf="@+id/nSoilTestInput"
         app:layout_constraintTop_toBottomOf="@+id/label" />
 
+    <TextView
+        android:id="@+id/pTestRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:text="P:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <TextView
+        android:id="@+id/KTestRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="20dp"
+        android:text="K:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/nSoilTestInput"
         android:layout_width="78dp"
@@ -55,26 +79,48 @@
         app:layout_constraintTop_toBottomOf="@+id/label" />
 
 
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pSoilTestInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="128dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/kSoilTestInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="128dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
     <Button
         android:id="@+id/crop_continue"
         android:layout_width="225dp"
         android:layout_height="62dp"
         android:layout_marginBottom="32dp"
-        android:text="Continue"
         android:onClick="Continue"
+        android:text="Continue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
     <TextView
         android:id="@+id/selectedRatio"
         android:layout_width="58dp"
         android:layout_height="19dp"
         android:layout_marginBottom="16dp"
-        android:text="_-_-_"
         android:textAlignment="center"
+        android:text="_"
         app:layout_constraintBottom_toTopOf="@+id/crop_continue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
