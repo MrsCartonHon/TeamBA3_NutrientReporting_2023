@@ -21,7 +21,9 @@ public class soilTestData extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_soil_test_data);
 
-
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         TextView title = findViewById(R.id.cropandyieldtitle);
         selectedRatio = findViewById(R.id.selectedRatio);

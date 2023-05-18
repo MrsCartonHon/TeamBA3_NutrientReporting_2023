@@ -125,4 +125,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/labeln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lbs N/acre"
+        app:layout_constraintBottom_toBottomOf="@+id/nSoilTestInput"
+        app:layout_constraintStart_toEndOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toTopOf="@+id/nSoilTestInput" />
+
+    <TextView
+        android:id="@+id/labelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lbs P2O5/acre"
+        app:layout_constraintBottom_toBottomOf="@+id/pSoilTestInput"
+        app:layout_constraintStart_toEndOf="@+id/pSoilTestInput"
+        app:layout_constraintTop_toTopOf="@+id/pSoilTestInput" />
+
+    <TextView
+        android:id="@+id/labeln3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lbs K2O/acre"
+        app:layout_constraintBottom_toBottomOf="@+id/kSoilTestInput"
+        app:layout_constraintStart_toEndOf="@+id/kSoilTestInput"
+        app:layout_constraintTop_toTopOf="@+id/kSoilTestInput"
+        app:layout_constraintVertical_bias="0.458" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

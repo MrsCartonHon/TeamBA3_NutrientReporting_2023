@@ -26,6 +26,10 @@ public class RegistrationActivity extends AppCompatActivity {
         // taking FirebaseAuth instance
         mAuth = FirebaseAuth.getInstance();
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        } //Hides Action Bars
+
         // initialising all views through id defined above
         emailTextView = findViewById(R.id.email);
         passwordTextView = findViewById(R.id.passwd);

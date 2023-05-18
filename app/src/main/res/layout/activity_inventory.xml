@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Inventory">
 
-    <Button
-        android:id="@+id/inventoryList"
-        android:layout_width="242dp"
-        android:layout_height="88dp"
-        android:layout_marginBottom="32dp"
-        android:text="Check Current Inventory"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <EditText
         android:id="@+id/brandField"
         android:layout_width="wrap_content"
@@ -33,7 +23,7 @@
         android:layout_width="238dp"
         android:layout_height="46dp"
         android:layout_marginTop="32dp"
-        android:text="Add Items To Inventory"
+        android:text="Application Rate Calculator"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
