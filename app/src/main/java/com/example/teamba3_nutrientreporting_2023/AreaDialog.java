@@ -1,0 +1,60 @@
+package com.example.teamba3_nutrientreporting_2023;
+
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.text.InputType;
+import android.widget.EditText;
+
+import androidx.fragment.app.DialogFragment;
+
+public class AreaDialog extends DialogFragment {
+
+    public interface AreaDialogListener {
+        public void onDialogPositiveClickArea(DialogFragment dialog);
+    }
+
+    AreaDialogListener listener;
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        // Use the Builder class for convenient dialog construction
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setMessage("Please input a new area!");
+        final EditText input = new EditText(this.getContext());
+        input.setInputType(InputType.TYPE_CLASS_NUMBER);
+        builder.setView(input);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                RegionManageActivity.selectedLayout.area = Double.parseDouble(input.getText().toString());
+                listener.onDialogPositiveClickArea(AreaDialog.this);
+                dismiss();
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        // Create the AlertDialog object and return it
+        return builder.create();
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        // Verify that the host activity implements the callback interface
+        try {
+            // Instantiate the NoticeDialogListener so we can send events to the host
+            listener = (AreaDialogListener) context;
+        } catch (ClassCastException e) {
+            // The activity doesn't implement the interface, throw exception
+            throw new ClassCastException("Must implement AreaDialogListener!");
+        }
+    }
+
+
+}

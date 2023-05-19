@@ -20,6 +20,9 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".RegionManageActivity"
+            android:exported="false" />
+        <activity
             android:name=".Calculations"
             android:exported="false">
             <meta-data
