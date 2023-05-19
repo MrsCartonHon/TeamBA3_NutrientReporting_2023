@@ -43,4 +43,5 @@
     <string name="application_rate">Application Rate:</string>
     <string name="crop_type">Crop Type:</string>
     <string name="target_yield">Target Yield:</string>
+    <string name="login">Login</string>
 </resources>
