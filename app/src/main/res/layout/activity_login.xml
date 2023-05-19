@@ -71,6 +71,7 @@
         android:foregroundTint="@color/green"
         android:hint="Enter your Password"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,6 +125,9 @@
         android:onClick="goToRegister"
         android:text="@string/sign_up"
         android:textColor="#3366CC"
+        android:onClick="goToRegister"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="510dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

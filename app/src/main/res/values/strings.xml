@@ -25,6 +25,7 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="calcPoundArea">\" pounds per acre\"</string>
     <string name="sign_up"><u>Sign Up</u></string>
+    <string name="potassium">potassium</string>
     <string-array name="dummy_fertilizers">
         <item>18–46–0 DAP</item>
         <item>11–55–0 MAP</item>
@@ -32,4 +33,14 @@
         <item>0–0–60 Potash</item>
     </string-array>
     <string name="title_activity_create_region_via_map">CreateRegionViaMap</string>
+    <string name="nitrogen">Nitrogen</string>
+    <string name="phosphurus">Phosphurus</string>
+    <string name="sulfur">Sulfur</string>
+    <string name="application_plane_name_var">Application Plane Name (Var)</string>
+    <string name="method">Method:</string>
+    <string name="date">Date:</string>
+    <string name="soil_test">Soil Test:</string>
+    <string name="application_rate">Application Rate:</string>
+    <string name="crop_type">Crop Type:</string>
+    <string name="target_yield">Target Yield:</string>
 </resources>
