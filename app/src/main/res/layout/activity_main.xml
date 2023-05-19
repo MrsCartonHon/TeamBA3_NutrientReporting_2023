@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/gray">
+    android:background="#3E363F">
 
     <TextView
         android:id="@+id/dashBoardTitle"
@@ -14,11 +14,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/Yellow1"
+        android:background="@drawable/mybutton2"
+        android:backgroundTint="@color/green"
         android:gravity="center_horizontal|center"
-        android:text="Nutrient Dashboard"
+        android:shadowColor="@color/Yellow1"
+        android:text="My Dashboard"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/green"
+        android:textColor="@color/gray2"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,81 +29,150 @@
 
     <ImageButton
         android:id="@+id/settingsButton"
-        android:layout_width="108dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/Yellow1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/mybutton2"
+        android:backgroundTint="@color/white"
         android:onClick="goToSettings"
         android:src="@drawable/ic_baseline_settings_90"
-        app:layout_constraintEnd_toStartOf="@+id/calcButton"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dashBoardTitle" />
 
     <ImageButton
         android:id="@+id/calcButton"
-        android:layout_width="108dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/Yellow1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/menuapps2"
         android:onClick="goToCalc"
-        android:src="@drawable/ic_baseline_grass_24"
+        android:src="@drawable/ic_baseline_inventory_90"
         app:iconTint="#4F7804"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/settingsButton"
         app:layout_constraintTop_toBottomOf="@+id/dashBoardTitle" />
 
     <ImageButton
         android:id="@+id/inventoryButton"
-        android:layout_width="108dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/Yellow1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/menuapps"
         android:onClick="openInventory"
         android:src="@drawable/ic_baseline_calculate_90"
         android:text="Inventory"
-        app:layout_constraintEnd_toStartOf="@+id/mapButton"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
 
     <ImageButton
         android:id="@+id/mapButton"
-        android:layout_width="108dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/Yellow1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/mybutton2"
+        android:backgroundTint="@color/white"
         android:onClick="goToMaps"
         android:src="@drawable/ic_baseline_map_90"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/inventoryButton"
         app:layout_constraintTop_toBottomOf="@+id/calcButton" />
 
     <ImageButton
         android:id="@+id/helpButton"
-        android:layout_width="108dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/Yellow1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/menuapps"
         android:onClick="goToHelp"
         android:src="@drawable/ic_baseline_help_90"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/inventoryButton"
         app:layout_constraintTop_toBottomOf="@+id/mapButton" />
 
     <ImageButton
         android:id="@+id/fertilizerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="108dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/Yellow1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/menuapps2"
         android:onClick="goToFertilizer"
-        android:src="@drawable/ic_baseline_help_90"
-        app:layout_constraintEnd_toStartOf="@+id/helpButton"
+        android:src="@drawable/ic_baseline_fertilizerstats_foreground"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryButton" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/settingsButton"
+        app:layout_constraintStart_toStartOf="@+id/settingsButton"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Inventory"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/calcButton"
+        app:layout_constraintStart_toStartOf="@+id/calcButton"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Calculator"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/inventoryButton"
+        app:layout_constraintStart_toStartOf="@+id/inventoryButton"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryButton" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Maps"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mapButton"
+        app:layout_constraintStart_toStartOf="@+id/mapButton"
         app:layout_constraintTop_toBottomOf="@+id/mapButton" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Information"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/fertilizerButton"
+        app:layout_constraintStart_toStartOf="@+id/fertilizerButton"
+        app:layout_constraintTop_toBottomOf="@+id/fertilizerButton" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Help"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/helpButton"
+        app:layout_constraintStart_toStartOf="@+id/helpButton"
+        app:layout_constraintTop_toBottomOf="@+id/helpButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

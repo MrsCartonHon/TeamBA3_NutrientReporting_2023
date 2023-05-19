@@ -6,7 +6,7 @@
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@color/white"
     android:gravity="center_vertical"
     tools:context=".LoginActivity"
     tools:layout_editor_absoluteX="-71dp"
@@ -31,16 +31,15 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif-black"
         android:fontFeatureSettings="bold"
-        android:text="@string/login"
+        android:text="@string/log_in"
         android:textColor="@color/green"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/email"
@@ -49,7 +48,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
-        android:background="@color/gray2"
+        android:background="@drawable/mybutton"
         android:fontFamily="sans-serif-condensed-medium"
         android:padding="10dp"
         android:textAlignment="viewStart"
@@ -62,10 +61,10 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="24dp"
-        android:background="@color/gray2"
+        android:background="@drawable/mybutton"
         android:padding="10dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:inputType="textPassword"
@@ -84,19 +83,14 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="24dp"
-        android:background="@color/green"
-        android:text="Sign in"
+        android:text="@string/sign_in"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:cornerRadius="100dp"
-        app:icon="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/password"/>
 
-    <!-- ProgressBar for Loading Time -->
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
@@ -129,7 +123,9 @@
         android:onClick="goToRegister"
         android:text="@string/sign_up"
         android:textColor="@color/green"
+        android:background="@color/Yellow1"
         android:textSize="20dp"
+        app:circularflow_radiusInDP="20"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="@+id/textView3" />
 
@@ -137,7 +133,7 @@
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username/Email Address"
+        android:text="Username or Email"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintStart_toStartOf="@+id/email" />
 
@@ -149,3 +145,4 @@
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintStart_toStartOf="@+id/password" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
