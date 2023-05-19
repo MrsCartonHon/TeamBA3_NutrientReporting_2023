@@ -1,54 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!-- Linear Layout with vertical orientation and other properties -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http:// schemas.android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http:// schemas.android.com/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
     android:gravity="center_vertical"
-    android:orientation="vertical"
-    android:padding="15dp"
-    tools:context=".RegistrationActivity"
-    android:background="@color/gray">
+    tools:context=".RegistrationActivity">
 
     <!-- TextView for heading -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:textColor="@color/white" />
+
     <!-- Edit text for email -->
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your Email"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
 
     <!-- Edit text for password -->
-    <EditText
-        android:id="@+id/passwd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your Password"
-        android:inputType="textPassword"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"/>
 
     <!-- Button for register with text "Register" -->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        android:src="@drawable/nutrientassist_1_"
+        app2:layout_constraintBottom_toTopOf="@+id/textView"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:foregroundTint="@color/green"
+        android:hint="Enter your Email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app2:layout_constraintBottom_toTopOf="@+id/passwd"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.0"
+        app2:layout_constraintStart_toStartOf="@+id/textView"
+        app2:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:foregroundTint="@color/green"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app2:layout_constraintBottom_toTopOf="@+id/btnregister"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.0"
+        app2:layout_constraintStart_toStartOf="@+id/email"
+        app2:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        app2:layout_constraintBottom_toTopOf="@+id/email"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent"
+        app2:layout_constraintVertical_chainStyle="packed" />
+
     <Button
         android:id="@+id/btnregister"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Register" />
+        android:layout_marginEnd="20dp"
+        android:text="Register"
+        app2:layout_constraintBottom_toBottomOf="parent"
+        app2:layout_constraintEnd_toEndOf="parent"
+        app2:layout_constraintHorizontal_bias="0.0"
+        app2:layout_constraintStart_toStartOf="@+id/passwd"
+        app2:layout_constraintTop_toBottomOf="@+id/passwd" />
 
     <!-- ProgressBar for loading time -->
     <ProgressBar
         android:id="@+id/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone" />
-</LinearLayout>
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app2:layout_constraintStart_toStartOf="parent"
+        app2:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
