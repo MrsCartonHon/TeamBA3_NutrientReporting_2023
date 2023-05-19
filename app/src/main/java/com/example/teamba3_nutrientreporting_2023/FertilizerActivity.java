@@ -24,6 +24,10 @@ public class FertilizerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fertilizer);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        } //Hides Action Bars
+
         crop = (TextView)findViewById(R.id.displayCropType);
         yield = (TextView)findViewById(R.id.displayTargetYield);
 

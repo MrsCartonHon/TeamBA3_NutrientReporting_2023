@@ -32,6 +32,10 @@ public class crop extends AppCompatActivity {
         selectedDateTV = findViewById(R.id.idTVSelectedDate);
         selectedDateTV.setText(Fertilizer.date);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        } //Hides Action Bars
+
         // on below line we are adding click listener for our pick date button
         pickDateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
