@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="@+id/pGradeInput" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/nGradeInput2"
+        android:id="@+id/amountInputInv"
         android:layout_width="78dp"
         android:layout_height="43dp"
         android:layout_marginStart="32dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toBottomOf="@+id/prompt2" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/nGradeInput3"
+        android:id="@+id/areaInputInv"
         android:layout_width="78dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
@@ -83,7 +83,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/typeRadioGroup" />
 
     <TextView
         android:id="@+id/prompt4"
@@ -94,29 +94,29 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nGradeInput2" />
+        app:layout_constraintTop_toBottomOf="@+id/amountInputInv" />
 
     <RadioGroup
-        android:id="@+id/genderRadioGroup"
+        android:id="@+id/typeRadioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/prompt1">
 
         <RadioButton
-            android:id="@+id/liquidBox"
-            android:layout_width="wrap_content"
+            android:id="@+id/dryRadio"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="28dp"
-            android:text="Liquid" />
+            android:checked="true"
+            android:text="Dry"
+            android:textAlignment="center" />
 
         <RadioButton
-            android:id="@+id/dryBox"
-            android:layout_width="wrap_content"
+            android:id="@+id/liquidRadio"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="28dp"
-            android:text="Dry " />
+            android:checked="false"
+            android:text="Liquid"
+            android:textAlignment="center" />
     </RadioGroup>
 
 
@@ -145,17 +145,16 @@
         app:layout_constraintTop_toBottomOf="@+id/inventoryHeader" />
 
 
-
     <TextView
         android:id="@+id/lorlbs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="lbs"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/nGradeInput2"
+        app:layout_constraintBottom_toBottomOf="@+id/amountInputInv"
         app:layout_constraintEnd_toEndOf="@+id/prompt2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/nGradeInput2" />
+        app:layout_constraintStart_toEndOf="@+id/amountInputInv" />
 
     <TextView
         android:id="@+id/acresLabelInventory"
@@ -163,14 +162,15 @@
         android:layout_height="wrap_content"
         android:text="acres"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/nGradeInput3"
-        app:layout_constraintStart_toEndOf="@+id/nGradeInput3" />
+        app:layout_constraintBottom_toBottomOf="@+id/areaInputInv"
+        app:layout_constraintStart_toEndOf="@+id/areaInputInv" />
 
     <Button
         android:id="@+id/calcApplicationRate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:onClick="calcApplicationRate"
         android:text="Calculate Application Rate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
