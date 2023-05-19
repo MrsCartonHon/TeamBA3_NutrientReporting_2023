@@ -20,13 +20,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <TextView
         android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Enter Results From Soil Test Data Below:"
+        android:text="Enter the Nutrient Targets"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cropandyieldtitle" />
@@ -78,7 +77,6 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/label" />
-
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/pSoilTestInput"
@@ -153,5 +151,27 @@
         app:layout_constraintStart_toEndOf="@+id/kSoilTestInput"
         app:layout_constraintTop_toTopOf="@+id/kSoilTestInput"
         app:layout_constraintVertical_bias="0.458" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enter the total Field Area (acres)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kSoilTestInput" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/areaInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/label2"
+        app:layout_constraintStart_toStartOf="@+id/label2"
+        app:layout_constraintTop_toBottomOf="@+id/label2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

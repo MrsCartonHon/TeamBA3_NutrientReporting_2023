@@ -16,6 +16,12 @@ public class Fertilizer {
     public static int PSoilTest;
     public static int KSoilTest;
 
+    public static int area;
+
+    public static int N;
+    public static int P;
+    public static int K;
+
     public static String getCropName() {
         return cropName;
     }
