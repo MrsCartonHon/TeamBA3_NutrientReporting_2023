@@ -9,31 +9,31 @@ public class Fertilizer {
     }
 
     //Only for Display:
-    public static String cropName;
-    public static String yieldTarget;
-    public static String date;
+    public static String cropName = "_";
+    public static String yieldTarget = "_";
+    public static String date = "_";
 
     //Input Values:
-    public static double nTarget;
-    public static double pTarget;
-    public static double kTarget;
+    public static double nTarget = 0;
+    public static double pTarget = 0;
+    public static double kTarget = 0;
 
-    public static double area;
+    public static double area = 0;
 
-    public static double N;
-    public static double P;
-    public static double K;
+    public static double N = 0;
+    public static double P = 0;
+    public static double K = 0;
 
-    public static double weight;
-    public static double cost;
+    public static double weight = 0;
+    public static double cost = 0;
 
     //calculated Values:
-    public static double bagCount;
-    public static double totalCost;
+    public static double bagCount = 0;
+    public static double totalCost = 0;
 
-    public static double nApplied;
-    public static double pApplied;
-    public static double kApplied;
+    public static double nApplied = 0;
+    public static double pApplied = 0;
+    public static double kApplied = 0;
 
     public static String getCropName() {
         return cropName;
