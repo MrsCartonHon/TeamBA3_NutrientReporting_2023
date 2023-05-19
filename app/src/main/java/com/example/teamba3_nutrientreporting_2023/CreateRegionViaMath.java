@@ -27,7 +27,6 @@ public class CreateRegionViaMath extends AppCompatActivity {
         EditText name = (EditText)(findViewById(R.id.editTextTextPersonName));
         Geocoder geocoder = new Geocoder(this);
         List<Address> addressList;
-
         try{
             addressList = geocoder.getFromLocationName(address.getText().toString(), 5);
             if (addressList != null) {
@@ -39,7 +38,7 @@ public class CreateRegionViaMath extends AppCompatActivity {
                 MainActivity.regions.add(new Region(address.toString(), Integer.parseInt(area.getText().toString()), name.getText().toString()));
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            MainActivity.regions.add(new Region(address.toString(), Integer.parseInt(area.getText().toString()), name.getText().toString()));
         }
         Intent itent = new Intent(CreateRegionViaMath.this, MainActivity.class);
         CreateRegionViaMath.this.startActivity(itent);

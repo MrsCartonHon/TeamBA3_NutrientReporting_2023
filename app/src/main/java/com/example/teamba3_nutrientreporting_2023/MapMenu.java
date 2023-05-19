@@ -23,4 +23,9 @@ public class MapMenu extends AppCompatActivity {
         Intent itent = new Intent(MapMenu.this, MapsActivity.class);
         MapMenu.this.startActivity(itent);
     }
+
+    public void goToManage(View view) {
+        Intent itent = new Intent(MapMenu.this, RegionManageActivity.class);
+        MapMenu.this.startActivity(itent);
+    }
 }
