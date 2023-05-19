@@ -72,6 +72,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="10dp"
+                        android:textColor="@color/black"
                         android:text="@string/nitrogen" />
 
                 </LinearLayout>
@@ -93,6 +94,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:paddingLeft="10dp"
                         android:text="@string/phosphurus" />
 
@@ -115,6 +117,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:paddingLeft="10dp"
                         android:text="@string/potassium" />
 
@@ -169,6 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
                     android:text="@string/crop_type"
                     android:textSize="18sp" />
 
@@ -194,6 +198,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
                     android:text="@string/target_yield"
                     android:textSize="18sp" />
 
@@ -241,6 +246,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
                     android:text="@string/method"
                     android:textSize="18sp" />
 
@@ -266,6 +272,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
                     android:text="@string/date"
                     android:textSize="18sp" />
 
@@ -290,6 +297,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
                     android:text="@string/soil_test"
                     android:textSize="18sp" />
 
@@ -314,6 +322,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
                     android:text="@string/application_rate"
                     android:textSize="18sp" />
 
@@ -335,5 +344,6 @@
         android:gravity="center"
         android:text="@string/application_plane_name_var"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="20dp" />
 </RelativeLayout>

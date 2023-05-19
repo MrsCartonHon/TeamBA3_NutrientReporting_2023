@@ -124,7 +124,6 @@
         android:onClick="goToRegister"
         android:text="@string/sign_up"
         android:textColor="#3366CC"
-        android:onClick="goToRegister"
         tools:layout_editor_absoluteX="167dp"
         tools:layout_editor_absoluteY="510dp"
         app:layout_constraintStart_toEndOf="@+id/textView3"
