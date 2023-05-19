@@ -22,6 +22,8 @@ public class HelpDisplayActivity extends AppCompatActivity {
 
         LinearLayout layout = findViewById(R.id.helpDisplay);
         HelpView page = new HelpView(this, getIntent().getIntExtra("resource", -1));
+        page.setTextColor(0xFFFFFFFF);
+
         Markwon markwon = Markwon.create(page.getContext());
         BufferedReader reader = new BufferedReader(new InputStreamReader(getResources().openRawResource(page.resource)));
 
