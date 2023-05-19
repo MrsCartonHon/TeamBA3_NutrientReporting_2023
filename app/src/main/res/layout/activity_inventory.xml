@@ -6,103 +6,174 @@
     android:layout_height="match_parent"
     tools:context=".Inventory">
 
-    <Button
-        android:id="@+id/inventoryList"
-        android:layout_width="242dp"
-        android:layout_height="88dp"
-        android:layout_marginBottom="32dp"
-        android:text="Check Current Inventory"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nGradeInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/pGradeInput"
+        app:layout_constraintTop_toTopOf="@+id/pGradeInput" />
 
-    <EditText
-        android:id="@+id/brandField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Fertilizer Brand or Name"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nGradeInput2"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/prompt2"
+        app:layout_constraintTop_toBottomOf="@+id/prompt2" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nGradeInput3"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/prompt4"
+        app:layout_constraintTop_toBottomOf="@+id/prompt4" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pGradeInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inventoryHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/prompt" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/kGradeInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/pGradeInput"
+        app:layout_constraintTop_toTopOf="@+id/pGradeInput" />
 
     <TextView
         android:id="@+id/inventoryHeader"
-        android:layout_width="238dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="32dp"
-        android:text="Add Items To Inventory"
+        android:layout_width="311dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:text="Application Rate Calculator"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/applicationRate"
+    <TextView
+        android:id="@+id/prompt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Application Rate"
+        android:layout_marginTop="20dp"
+        android:text="Enter the Amount Applied"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/brandField" />
+        app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup" />
 
-    <CheckBox
-        android:id="@+id/dryBox"
+    <TextView
+        android:id="@+id/prompt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="36dp"
-        android:text="Dry "
-        app:layout_constraintEnd_toStartOf="@+id/liquidBox"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="40dp"
+        android:text="Enter the Area"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/brandField" />
+        app:layout_constraintTop_toBottomOf="@+id/nGradeInput2" />
 
-    <CheckBox
-        android:id="@+id/liquidBox"
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/prompt1">
+
+        <RadioButton
+            android:id="@+id/liquidBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:text="Liquid" />
+
+        <RadioButton
+            android:id="@+id/dryBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:text="Dry " />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/prompt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="Liquid"
-        app:layout_constraintTop_toBottomOf="@+id/brandField"
-        tools:layout_editor_absoluteX="208dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/n"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:text="N (%)"
-        app:layout_constraintEnd_toStartOf="@+id/p"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="40dp"
+        android:text="Is the fertilizer a liquid or solid?"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/applicationRate" />
+        app:layout_constraintTop_toBottomOf="@+id/pGradeInput" />
 
     <TextView
-        android:id="@+id/p"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:text="P2O5 (%)"
-        app:layout_constraintTop_toBottomOf="@+id/applicationRate"
-        tools:layout_editor_absoluteX="172dp"
-        tools:ignore="MissingConstraints" />
+        android:id="@+id/prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enter the N - P - K Percentage Ratio"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryHeader" />
+
+
 
     <TextView
-        android:id="@+id/k"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:text="K2O (%)"
-        app:layout_constraintStart_toEndOf="@+id/p"
-        app:layout_constraintTop_toBottomOf="@+id/applicationRate" />
+        android:id="@+id/lorlbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nGradeInput2"
+        app:layout_constraintEnd_toEndOf="@+id/prompt2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nGradeInput2" />
+
+    <TextView
+        android:id="@+id/acresLabelInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="acres"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nGradeInput3"
+        app:layout_constraintStart_toEndOf="@+id/nGradeInput3" />
+
+    <Button
+        android:id="@+id/calcApplicationRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Calculate Application Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

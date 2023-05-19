@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:scrollbars = "vertical"
+    android:background="@color/gray"
     tools:context=".HelpMenuActivity">
 
     <ScrollView

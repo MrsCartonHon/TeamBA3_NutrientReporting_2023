@@ -92,4 +92,16 @@
         app:layout_constraintStart_toEndOf="@+id/inventoryButton"
         app:layout_constraintTop_toBottomOf="@+id/mapButton" />
 
+    <ImageButton
+        android:id="@+id/fertilizerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="108dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/Yellow1"
+        android:onClick="goToFertilizer"
+        android:src="@drawable/ic_baseline_help_90"
+        app:layout_constraintEnd_toStartOf="@+id/helpButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

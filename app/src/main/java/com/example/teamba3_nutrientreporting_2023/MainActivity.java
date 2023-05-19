@@ -35,12 +35,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToCalc(View view) {
-        Intent itent = new Intent(MainActivity.this, CalcActivity.class);
+        Intent itent = new Intent(MainActivity.this, ApplicationPlanner.class);
         MainActivity.this.startActivity(itent);
     }
 
     public void goToHelp(View view) {
         Intent itent = new Intent(MainActivity.this, HelpMenuActivity.class);
+        MainActivity.this.startActivity(itent);
+    }
+
+    public void goToFertilizer(View view) {
+        Intent itent = new Intent(MainActivity.this, FertilizerActivity.class);
         MainActivity.this.startActivity(itent);
     }
 }

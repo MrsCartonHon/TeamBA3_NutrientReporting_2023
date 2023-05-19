@@ -15,6 +15,34 @@
         <activity
             android:name=".RegionManageActivity"
             android:exported="false" />
+        <activity
+            android:name=".Calculations"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".soilTestData"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".crop"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ApplicationPlanner"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -53,13 +81,6 @@
             android:name=".HelpMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".CalcActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".MapsActivity"
             android:exported="false"
             android:label="MapsActivity">
@@ -74,6 +95,10 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+        </activity>
+        <activity
+            android:name=".FertilizerActivity"
+            android:parentActivityName=".MainActivity">
         </activity>
         <activity
             android:name=".SettingsActivity"
