@@ -2,6 +2,7 @@ package com.example.teamba3_nutrientreporting_2023;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -74,6 +75,9 @@ public class fertilizerData extends AppCompatActivity {
         System.out.println(Fertilizer.bagCount);
         System.out.println(Fertilizer.totalCost);
         System.out.println( Fertilizer.nApplied);
+
+        Intent itent = new Intent(fertilizerData.this, FertilizerActivity.class);
+        fertilizerData.this.startActivity(itent);
 
     }
 }
