@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".soilTestData">
+
+    <TextView
+        android:id="@+id/cropandyieldtitle"
+        android:layout_width="341dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Enter Results From Soil Test Data Below:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cropandyieldtitle" />
+
+    <TextView
+        android:id="@+id/nTestRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="N:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <TextView
+        android:id="@+id/pTestRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:text="P:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <TextView
+        android:id="@+id/KTestRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="20dp"
+        android:text="K:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nSoilTestInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="128dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pSoilTestInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="128dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/kSoilTestInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="128dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <Button
+        android:id="@+id/crop_continue"
+        android:layout_width="225dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="Continue"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedRatio"
+        android:layout_width="58dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:text="_"
+        app:layout_constraintBottom_toTopOf="@+id/crop_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labeln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lbs N/acre"
+        app:layout_constraintBottom_toBottomOf="@+id/nSoilTestInput"
+        app:layout_constraintStart_toEndOf="@+id/nSoilTestInput"
+        app:layout_constraintTop_toTopOf="@+id/nSoilTestInput" />
+
+    <TextView
+        android:id="@+id/labelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lbs P2O5/acre"
+        app:layout_constraintBottom_toBottomOf="@+id/pSoilTestInput"
+        app:layout_constraintStart_toEndOf="@+id/pSoilTestInput"
+        app:layout_constraintTop_toTopOf="@+id/pSoilTestInput" />
+
+    <TextView
+        android:id="@+id/labeln3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lbs K2O/acre"
+        app:layout_constraintBottom_toBottomOf="@+id/kSoilTestInput"
+        app:layout_constraintStart_toEndOf="@+id/kSoilTestInput"
+        app:layout_constraintTop_toTopOf="@+id/kSoilTestInput"
+        app:layout_constraintVertical_bias="0.458" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -71,7 +71,6 @@
         android:foregroundTint="@color/green"
         android:hint="Enter your Password"
         android:inputType="textPassword"
-        android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
