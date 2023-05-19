@@ -19,6 +19,7 @@ public class crop extends AppCompatActivity {
     private EditText yield;
     private Button pickDateBtn;
     private TextView selectedDateTV;
+    private String date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,10 @@ public class crop extends AppCompatActivity {
         pickDateBtn = findViewById(R.id.idBtnPickDate);
         selectedDateTV = findViewById(R.id.idTVSelectedDate);
         selectedDateTV.setText(Fertilizer.date);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        } //Hides Action Bars
 
         // on below line we are adding click listener for our pick date button
         pickDateBtn.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +59,7 @@ public class crop extends AppCompatActivity {
                             public void onDateSet(DatePicker view, int year,
                                                   int monthOfYear, int dayOfMonth) {
                                 // on below line we are setting date to our text view.
+                                date = "Planned Application Date: " + dayOfMonth + "-" + (monthOfYear + 1) + "-" + year;
                                 selectedDateTV.setText("Planned Application Date: " + dayOfMonth + "-" + (monthOfYear + 1) + "-" + year);
 
                             }
@@ -77,7 +83,7 @@ public class crop extends AppCompatActivity {
 
         Fertilizer.cropName = crop.getText().toString();
         Fertilizer.yieldTarget = yield.getText().toString();
-        Fertilizer.date = selectedDateTV.getText().toString();
+        Fertilizer.date = date;
         Intent itent = new Intent(crop.this, soilTestData.class);
         crop.this.startActivity(itent);
 

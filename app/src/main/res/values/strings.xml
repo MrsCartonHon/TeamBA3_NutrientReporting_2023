@@ -43,4 +43,9 @@
     <string name="application_rate">Application Rate:</string>
     <string name="crop_type">Crop Type:</string>
     <string name="target_yield">Target Yield:</string>
+    <string name="username_email_address">Username/Email Address</string>
+    <string name="password">Password</string>
+    <string name="sign_up_label">Sign up</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_in">Sign in</string>
 </resources>

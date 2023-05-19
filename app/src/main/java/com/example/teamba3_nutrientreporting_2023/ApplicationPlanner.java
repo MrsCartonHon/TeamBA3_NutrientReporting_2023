@@ -11,6 +11,10 @@ public class ApplicationPlanner extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_application_planner);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        } //Hides Action Bars
     }
 
     public void goToCrop(View view) {
