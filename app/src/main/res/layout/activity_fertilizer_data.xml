@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".fertilizerData">
 
+    <Button
+        android:id="@+id/crop_continue2"
+        android:layout_width="225dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="ContinueToPlan"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/fertilizerinputheader"
         android:layout_width="341dp"
@@ -99,7 +110,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="60dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/fertlabel"
@@ -110,7 +121,7 @@
         android:layout_width="78dp"
         android:layout_height="43dp"
         android:layout_marginTop="28dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/fertlabel2"
@@ -122,7 +133,7 @@
         android:layout_width="78dp"
         android:layout_height="43dp"
         android:layout_marginTop="40dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/fertlabel2"
@@ -135,7 +146,7 @@
         android:layout_width="78dp"
         android:layout_height="43dp"
         android:layout_marginTop="100dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/nGradeInput"
@@ -146,7 +157,7 @@
         android:layout_width="78dp"
         android:layout_height="43dp"
         android:layout_marginTop="160dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:text="0"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/pGradeInput"
@@ -160,6 +171,15 @@
         app:layout_constraintBottom_toBottomOf="@+id/weightInputFert"
         app:layout_constraintStart_toEndOf="@+id/weightInputFert"
         app:layout_constraintTop_toTopOf="@+id/weightInputFert" />
+
+    <TextView
+        android:id="@+id/fertcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        app:layout_constraintBottom_toBottomOf="@+id/costInputFert"
+        app:layout_constraintStart_toEndOf="@+id/costInputFert"
+        app:layout_constraintTop_toTopOf="@+id/costInputFert" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

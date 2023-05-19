@@ -8,19 +8,32 @@ public class Fertilizer {
         date = "Please Enter";
     }
 
+    //Only for Display:
     public static String cropName;
     public static String yieldTarget;
     public static String date;
 
-    public static int NSoilTest;
-    public static int PSoilTest;
-    public static int KSoilTest;
+    //Input Values:
+    public static double nTarget;
+    public static double pTarget;
+    public static double kTarget;
 
-    public static int area;
+    public static double area;
 
-    public static int N;
-    public static int P;
-    public static int K;
+    public static double N;
+    public static double P;
+    public static double K;
+
+    public static double weight;
+    public static double cost;
+
+    //calculated Values:
+    public static double bagCount;
+    public static double totalCost;
+
+    public static double nApplied;
+    public static double pApplied;
+    public static double kApplied;
 
     public static String getCropName() {
         return cropName;

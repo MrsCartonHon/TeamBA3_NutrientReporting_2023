@@ -41,13 +41,14 @@ public class soilTestData extends AppCompatActivity {
         n = (EditText)findViewById(R.id.nSoilTestInput);
         p = (EditText)findViewById(R.id.pSoilTestInput);
         k = (EditText)findViewById(R.id.kSoilTestInput);
-        Fertilizer.NSoilTest = Integer.parseInt(n.getText().toString());
-        Fertilizer.PSoilTest = Integer.parseInt(p.getText().toString());
-        Fertilizer.KSoilTest = Integer.parseInt(k.getText().toString());
-        Fertilizer.area = Integer.parseInt(area.getText().toString());
-        System.out.println(Fertilizer.NSoilTest);
-        System.out.println(Fertilizer.PSoilTest);
-        System.out.println(Fertilizer.KSoilTest);
+
+        Fertilizer.nTarget = Double.parseDouble(n.getText().toString());
+        Fertilizer.pTarget = Double.parseDouble(p.getText().toString());
+        Fertilizer.kTarget = Double.parseDouble(k.getText().toString());
+        Fertilizer.area = Double.parseDouble(area.getText().toString());
+        System.out.println(Fertilizer.nTarget);
+        System.out.println(Fertilizer.pTarget);
+        System.out.println(Fertilizer.kTarget);
 
         Intent itent = new Intent(soilTestData.this, fertilizerData.class);
         soilTestData.this.startActivity(itent);
