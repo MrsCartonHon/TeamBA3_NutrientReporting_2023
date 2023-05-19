@@ -2,9 +2,164 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fertilizerData">
+
+    <TextView
+        android:id="@+id/fertilizerinputheader"
+        android:layout_width="341dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:textSize="20sp"
+        android:text="You will now enter information about the Fertilizer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fertlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Now enter the grade (N-P-K) of your Fertilizer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fertilizerinputheader" />
+
+
+    <TextView
+        android:id="@+id/fertlabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enter the weight of every unit of Fertilizer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kGradeInput" />
+
+    <TextView
+        android:id="@+id/fertlabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Enter the cost of every unit of Fertillizer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightInputFert" />
+
+    <TextView
+        android:id="@+id/nGradeRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="N:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nGradeInput"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/fertlabel"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel" />
+
+    <TextView
+        android:id="@+id/pGradeRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:text="P:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nGradeInput"
+        app:layout_constraintStart_toStartOf="@+id/nGradeRatio"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel" />
+
+    <TextView
+        android:id="@+id/KGradeRatio"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="20dp"
+        android:text="K:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nGradeInput"
+        app:layout_constraintStart_toStartOf="@+id/pGradeRatio"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nGradeInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/fertlabel"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/weightInputFert"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/fertlabel2"
+        app:layout_constraintStart_toStartOf="@+id/fertlabel2"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel2" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/costInputFert"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/fertlabel2"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/fertlabel2"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel3" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/pGradeInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="100dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/nGradeInput"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/kGradeInput"
+        android:layout_width="78dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/pGradeInput"
+        app:layout_constraintTop_toBottomOf="@+id/fertlabel" />
+
+    <TextView
+        android:id="@+id/fertweightlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lbs"
+        app:layout_constraintBottom_toBottomOf="@+id/weightInputFert"
+        app:layout_constraintStart_toEndOf="@+id/weightInputFert"
+        app:layout_constraintTop_toTopOf="@+id/weightInputFert" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
